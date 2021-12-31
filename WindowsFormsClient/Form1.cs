@@ -28,7 +28,7 @@ namespace WindowsFormsClient
             if((UserName.Length > 1) && (Message.Length > 1))
             {
                 MyMessanger_Stepik.Message msg = new MyMessanger_Stepik.Message(UserName, Message, DateTime.Now);
-                API.SendMessage(msg);
+                API.SendMessageRestSharp(msg);
             }
         }
 
